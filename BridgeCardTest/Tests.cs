@@ -15,7 +15,7 @@ namespace BridgeCardTest
         }
         
         [Theory]
-        [InlineData("2H 4S 4C 2D 4H","2S 8S AS QS 3S","BlackWin - FullHouse")]
+        [InlineData("2H 4S 4C 2D 4H","2H 5S 5C 2D 5H","BlackWin - FullHouse")]
         public void ShouldBlackWin(string black, string white, string expect)
         {
             var common = new Common(black,white);
